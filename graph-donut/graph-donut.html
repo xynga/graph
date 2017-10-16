@@ -1,0 +1,17 @@
+<svg width="120" height="120" >
+
+  <defs>
+    <mask id="circleMask" x="0" y="0" width="120" height="120">
+      <circle cx="60" cy="60" [attr.r]="outerRadius" style="fill:#ffffff;" />
+      <circle cx="60" cy="60" [attr.r]="outerRadius - 10" style="fill:#000000;" />
+    </mask>
+  </defs>
+
+
+  <circle cx="60" cy="60" [attr.r]="outerRadius - 5" style="fill:#DDDDDD;"></circle>
+  <path *ngIf="percentage < 1" id="Ring" [attr.d]="'M 60 60 l 0 -'+ outerRadius +' a ' + outerRadius + ' ' + outerRadius +  ' 0 '+ sideFlag +' 1 ' + coords[0] + ' ' + coords[1] + ' z'"
+        [attr.fill]="color" style="mask: url(#circleMask);"/>
+  <circle *ngIf="percentage >= 1" cx="60" cy="60" [attr.r]="outerRadius" [attr.fill]="color" style="mask: url(#circleMask);"/>
+  <text x="60" y="63" text-anchor="middle" alignment-baseline="middle" style="font-family: Arial; font-size: 180%">{{numPercent}}%</text>
+
+</svg>
