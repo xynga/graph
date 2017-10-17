@@ -1,5 +1,5 @@
 {
-  "name": "graph",
+  "name": "xynga-graph",
   "version": "1.0.0",
   "description": "Holds all the components classified under the label \"Graphs\"",
   "main": "index.js",
