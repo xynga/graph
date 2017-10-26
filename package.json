@@ -1,6 +1,6 @@
 {
   "name": "xynga-graph",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Holds all the components classified under the label \"Graphs\"",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,4 @@
     "@angular/core": "^4.4.4",
     "@angular/common": "^4.4.4"
   }
-
 }
