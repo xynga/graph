@@ -2,7 +2,7 @@
   "name": "xynga-graph",
   "version": "1.0.2",
   "description": "Holds all the components classified under the label \"Graphs\"",
-  "main": "index.js",
+  "main": "graph/inline/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "gulp inline && ngc"
