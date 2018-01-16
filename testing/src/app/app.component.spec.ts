@@ -64,7 +64,6 @@ describe('Graph-Donut', () => {
   it(`should have coords in the top right quadrent if less than 25%`, async ( () =>{
     const fixture = TestBed.createComponent(GraphDonutComponent);
     const myComponent = fixture.debugElement.componentInstance;
-
     myComponent.percentage = .14;
     fixture.detectChanges();
     expect(myComponent.coords[0]).toBeGreaterThan(0);
@@ -97,15 +96,16 @@ describe('Graph-Donut', () => {
     expect(myComponent.coords[0]).toBeLessThan(0);
     expect(myComponent.coords[1]).toBeLessThan(50);
   }));
-  it(`should display a circle with no ring and 0%` async ( () => {
+  it(`should display a circle with no ring and 0%`, async ( () => {
     const fixture = TestBed.createComponent(GraphDonutComponent);
     const myComponent = fixture.debugElement.componentInstance;
+
 
     myComponent.percentage = 0;
     fixture.detectChanges();
     expect(myComponent.numPercent).toEqual(0);
   }));
-  it(`should display a full green ring when the graph is at 100%` async ( () => {
+  it(`should display a full green ring when the graph is at 100%`, async ( () => {
     const fixture = TestBed.createComponent(GraphDonutComponent);
     const myComponent = fixture.debugElement.componentInstance;
 
