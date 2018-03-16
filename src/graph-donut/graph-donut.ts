@@ -12,8 +12,7 @@ const SELECTOR: string = 'graph-donut';
   templateUrl: './graph-donut.html',
 })
 export class GraphDonutComponent implements OnInit{
-  @Input()
-  percentage: number;
+  @Input() percentage: number;
 
   numPercent: number;
 

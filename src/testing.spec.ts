@@ -1,5 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
-import { GraphDonutComponent } from 'xynga-graph';
+import { GraphDonutComponent } from './graph-donut/graph-donut';
 describe('Graph-Donut', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
